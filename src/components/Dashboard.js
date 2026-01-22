@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, View, ScrollView } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { Scale, Settings, Flame, Droplet, TrendingUp, Coffee, Sun, Moon, Apple, Activity } from 'lucide-react-native';
+import WaterTraker from './WaterTraker';
 
 export default function Dashboard() {
   return (
@@ -75,12 +75,7 @@ export default function Dashboard() {
               </View>
             </View>
             {/* Quick Add Water */}
-            <View style={styles.containerBox}>
-              <View style={styles.containerHeader}>
-                <Droplet size={20} color="#3ABFF8" />
-                <Text style={styles.containerHeaderText}>Quick Add Water</Text>
-              </View>
-            </View>
+<WaterTraker/>
             {/* Meals */}
             <View style={{ width: '90%' }}>
               <View style={{ alignSelf: 'flex-start' }}>
