@@ -1,14 +1,9 @@
 import {StyleSheet, Text, View, ScrollView } from 'react-native';
 import {Flame, Droplet, TrendingUp, Coffee, Sun, Moon, Apple, Activity } from 'lucide-react-native';
 import WaterTraker from './WaterTraker';
-import Header from './Header';
 
 export default function Dashboard() {
     return (
-        <View style={styles.container}>
-            {/* Header */}
-            <Header/>
-            {/* Navigation */}
             <ScrollView
                 style={{ width: '100%' }}
                 contentContainerStyle={{ alignItems: 'center', paddingBottom: 50 }}
@@ -97,7 +92,6 @@ export default function Dashboard() {
                     </View>
                 </View>
             </ScrollView>
-        </View>
     );
 }
 
